@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: light --default 
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #B90808;
+  --color-secondary: #FBF3F3;
+  --color-accent: #706F6F;
+}
+
+
+*{
+  font-family: "Sora", sans-serif;
 }

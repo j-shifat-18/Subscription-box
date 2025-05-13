@@ -1,8 +1,9 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
+  const [error , setError] = useState('');
   const { createUser, setUser, updateUserInfo, googleLogin } = use(AuthContext);
 
   const navigate = useNavigate();
@@ -13,7 +14,13 @@ const Register = () => {
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
+    const passwordRegEx = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/ ;
+
+    if(passwordRegEx.test(password)===false){
+      setError('Password must have one Uppercase , one lowercase and minimum 6 characters or longer');
+      return;
+    }
     createUser(email, password)
       .then((result) => {
         const newUser = result.user;
@@ -91,6 +98,8 @@ const Register = () => {
               />
               <p className="text-accent">Accept Term & Conditions</p>
             </div>
+
+            {error && <p className="text-red-700 text-xs">{error}</p>}
             <button className="btn btn-neutral mt-4">Register</button>
           </form>
           <h2 className="font-semibold text-center">

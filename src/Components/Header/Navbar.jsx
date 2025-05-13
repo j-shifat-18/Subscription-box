@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOutUser } = use(AuthContext);
@@ -19,7 +20,7 @@ const Navbar = () => {
   const handleLogout = () => {
     logOutUser()
       .then(() => {
-        alert("logged out");
+        toast.success('Logged Out Successfully');
       })
       .catch((error) => console.log(error.message));
   };
@@ -84,6 +85,7 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+
   );
 };
 

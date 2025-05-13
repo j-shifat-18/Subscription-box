@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
   const { loginUser, googleLogin } = use(AuthContext);
@@ -18,10 +19,13 @@ const Login = () => {
 
     loginUser(email, password)
       .then(() => {
-        navigate(`${location.state ? location.state : "/"}`);
+        navigate(`${location.state ? location.state : "/"}`, {
+          state: { loginSuccess: true },
+        });
       })
       .catch(() => {
         setError("Invalid email or password.");
+        toast.error("Login Failed");
       });
   };
 
@@ -112,6 +116,7 @@ const Login = () => {
           Login with Google
         </button>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

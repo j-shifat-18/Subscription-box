@@ -10,11 +10,13 @@ import PrivateRoute from "./PrivateRoute";
 import SubscriptionBoxes from "../Components/SubscriptionBoxes/SubscriptionBoxes";
 import Loading from "../Components/Loading/Loading";
 import CardDetailsLayout from "../Layouts/CardDetailsLayout";
+import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
@@ -26,6 +28,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/category/:id",
+    errorElement: <ErrorPage></ErrorPage>,
     element: (
       <PrivateRoute>
         <CardDetailsLayout></CardDetailsLayout>
@@ -37,6 +40,7 @@ export const router = createBrowserRouter([
   {
     path: "auth",
     element: <AuthLayout></AuthLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/auth/login",
@@ -54,6 +58,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "profile",
+    errorElement: <ErrorPage></ErrorPage>,
     element: (
       <PrivateRoute>
         <ProfileLayout></ProfileLayout>

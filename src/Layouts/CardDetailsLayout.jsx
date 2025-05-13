@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Header/Navbar";
 import CardDetails from "../Components/CardDetails/CardDetails";
 import Footer from "../Components/Footer/Footer";
+import ReviewSection from "../Components/CardDetails/ReviewSection";
 
 const CardDetailsLayout = () => {
   return (
@@ -11,6 +12,7 @@ const CardDetailsLayout = () => {
       </header>
       <main className="max-w-11/12 mx-auto my-24">
         <CardDetails></CardDetails>
+        <ReviewSection></ReviewSection>
       </main>
       <footer>
         <Footer></Footer>

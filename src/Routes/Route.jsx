@@ -26,7 +26,13 @@ export const router = createBrowserRouter([
   },
   {
     path: "/category/:id",
-    element: <CardDetailsLayout></CardDetailsLayout>,
+    element: (
+      <PrivateRoute>
+        <CardDetailsLayout></CardDetailsLayout>
+      </PrivateRoute>
+    ),
+    loader: () => fetch("/subscriptionData.json"),
+    hydrateFallbackElement: <Loading></Loading>,
   },
   {
     path: "auth",

@@ -28,7 +28,7 @@ const Slider = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination,Navigation, Autoplay]}
-        className="mySwiper h-[400px] w-[750px] "
+        className="mySwiper h-[400px] w-[750px] rounded-2xl"
       >
         {/* slide 1 */}
         <SwiperSlide>

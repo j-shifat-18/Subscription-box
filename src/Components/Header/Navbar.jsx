@@ -41,13 +41,13 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="text-3xl font-bold ml-4">Subscription<span className=" text-red-600">Box</span></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/auth/login" className="btn">Login</Link>
+        <Link to="/auth/login" className="btn btn-outline border-primary hover:bg-primary hover:text-white">Login</Link>
       </div>
     </nav>
   );

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import { Link, NavLink } from "react-router";
-import './Navbar.css'
+import "./Navbar.css";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOutUser } = use(AuthContext);
   const links = (
     <>
       <li>
@@ -13,6 +15,14 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  const handleLogout = () => {
+    logOutUser()
+      .then(() => {
+        alert("logged out");
+      })
+      .catch((error) => console.log(error.message));
+  };
   return (
     <nav className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -41,13 +51,37 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-3xl font-bold ml-4">Subscription<span className=" text-red-600">Box</span></a>
+        <a className="text-3xl font-bold ml-4">
+          Subscription<span className=" text-red-600">Box</span>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
-        <Link to="/auth/login" className="btn btn-outline border-primary hover:bg-primary hover:text-white">Login</Link>
+      <div className="navbar-end flex gap-4 items-center object-cover">
+        {user ? (
+          <img
+            className="w-[40px] h-[40px] rounded-full"
+            src={user.photoURL}
+          ></img>
+        ) : (
+          <></>
+        )}
+        {user ? (
+          <button
+            onClick={handleLogout}
+            className="btn btn-outline border-primary hover:bg-primary hover:text-white"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link
+            to="/auth/login"
+            className="btn btn-outline border-primary hover:bg-primary hover:text-white"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </nav>
   );

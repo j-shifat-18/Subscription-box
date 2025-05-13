@@ -1,16 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { use } from "react";
+import { Link, useNavigate } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-    const handleRegister =(e)=>{
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        console.log(email,password)
+  const { createUser, setUser, updateUserInfo  } = use(AuthContext);
 
-    }
-    return (
-        <div className="hero  min-h-screen">
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password);
+    createUser(email, password)
+      .then((result) => {
+        const newUser = result.user;
+        updateUserInfo({ displayName: name, photoURL: photo })
+          .then(() => {
+            setUser({ ...newUser, displayName: name, photoURL: photo });
+            navigate("/");
+          })
+          .catch((error) => {
+            console.log(error);
+            setUser(newUser);
+          });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  return (
+    <div className="hero  min-h-screen">
       <div className="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body">
           <h2 className="font-semibold text-3xl text-center mb-5">
@@ -72,7 +94,7 @@ const Register = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Register;

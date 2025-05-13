@@ -1,18 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { use, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
+  const { loginUser} = use(AuthContext);
+  const [error , setError ] = useState('');
 
+  const location = useLocation();
+  const navigate = useNavigate();
 
-    const handleLogin = (e)=>{
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
 
-        console.log(email,password)
-    }
-    return (
-        <div className="hero  min-h-screen">
+    console.log(email, password);
+
+    loginUser(email,password)
+    .then(()=>{
+        navigate(`${location.state ? location.state:"/"}`);
+    })
+    .catch(()=>{
+      setError('Invalid email or password.');
+    })
+  };
+  return (
+    <div className="hero  min-h-screen">
       <div className="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body">
           <h2 className="font-semibold text-3xl text-center mb-5">
@@ -35,11 +48,14 @@ const Login = () => {
               className="input border-none bg-base-300 "
               placeholder="Enter your password"
             />
-            
-            {/* {error && <p className="text-red-700 text-xs">{error}</p>} */}
 
+            {error && <p className="text-red-700 text-xs">{error}</p>}
 
-            <div><Link to="/auth/forgot-password"  className="link link-hover">Forgot password?</Link></div>
+            <div>
+              <Link to="/auth/forgot-password" className="link link-hover">
+                Forgot password?
+              </Link>
+            </div>
 
             <button className="btn btn-neutral mt-4">Login</button>
           </form>
@@ -52,7 +68,7 @@ const Login = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Login;

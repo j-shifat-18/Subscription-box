@@ -7,6 +7,9 @@ import Register from "../Pages/Register";
 import ProfileLayout from "../Layouts/ProfileLayout";
 import ForgotPassword from "../Pages/ForgotPassword";
 import PrivateRoute from "./PrivateRoute";
+import SubscriptionBoxes from "../Components/SubscriptionBoxes/SubscriptionBoxes";
+import Loading from "../Components/Loading/Loading";
+import CardDetailsLayout from "../Layouts/CardDetailsLayout";
 
 export const router = createBrowserRouter([
   {
@@ -15,9 +18,15 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home></Home>,
+        element: <SubscriptionBoxes></SubscriptionBoxes>,
+        loader: () => fetch("/subscriptionData.json"),
+        hydrateFallbackElement: <Loading></Loading>,
       },
     ],
+  },
+  {
+    path: "/category/:id",
+    element: <CardDetailsLayout></CardDetailsLayout>,
   },
   {
     path: "auth",

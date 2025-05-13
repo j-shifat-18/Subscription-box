@@ -17,7 +17,7 @@ const HomeLayout = () => {
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
+      <main className="max-w-11/12 mx-auto">
         <Slider></Slider>
         <Outlet></Outlet>
       </main>

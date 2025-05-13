@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Home Box",
+    "thumbnail": "https://i.ibb.co/7tD3hMJ1/smart-home.jpg",
+    "banner": "https://i.ibb.co/7tD3hMJ1/smart-home.jpg",
+    "frequency": "Yearly",
+    "price": 199.99,
+    "description": "Transform your home into a smart home with curated smart devices, home automation products, and IoT gadgets.",
+    "tech_category": "Smart Home",
+    "features": [
+      "Smart Home Devices",
+      "Home Automation Tools",
+      "Cutting-edge IoT Gadgets"
+    ],
+    "subscription_benefits": [
+      "Discount on Future Smart Home Purchases",
+      "Exclusive Smart Home Tutorials",
+      "Early Access to Product Releases"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 315
+  },
+  {
+    "id": 2,
+    "name": "Gourmet Coffee Club",
+    "thumbnail": "https://i.ibb.co/Y44sBLZ0/gourment-coffee.jpg",
+    "banner": "https://i.ibb.co/Y44sBLZ0/gourment-coffee.jpg",
+    "frequency": "Monthly",
+    "price": 29.99,
+    "description": "Discover new and exciting single-origin coffee beans from around the world, roasted to perfection.",
+    "tech_category": "Food & Beverage",
+    "features": [
+      "Unique Coffee Blends",
+      "Tasting Notes & Brewing Tips",
+      "Surprise Coffee Accessories"
+    ],
+    "subscription_benefits": [
+      "Free Shipping on All Coffee Orders",
+      "Member Discounts on Coffee Gear",
+      "Exclusive Virtual Coffee Tasting Events"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 542
+  },
+  {
+    "id": 3,
+    "name": "Plant Lovers Paradise",
+    "thumbnail": "https://i.ibb.co/tMtQXL7x/indoor-plants-studio.jpg",
+    "banner": "https://i.ibb.co/tMtQXL7x/indoor-plants-studio.jpg",
+    "frequency": "Bi-Monthly",
+    "price": 39.99,
+    "description": "Receive a hand-picked selection of indoor plants, potting mix, and care instructions to greenify your space.",
+    "tech_category": "Lifestyle",
+    "features": [
+      "Variety of Indoor Plants",
+      "Decorative Planters",
+      "Plant Care Guides"
+    ],
+    "subscription_benefits": [
+      "Access to Online Plant Care Workshops",
+      "Discounts on Gardening Supplies",
+      "Plant Identification Support"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 287
+  },
+  {
+    "id": 4,
+    "name": "Tech Gadget Monthly",
+    "thumbnail": "https://i.ibb.co/rRchqVg6/latest-technology.jpg",
+    "banner": "https://i.ibb.co/rRchqVg6/latest-technology.jpg",
+    "frequency": "Monthly",
+    "price": 49.99,
+    "description": "Unbox the latest tech gadgets, from smart accessories to innovative tools.",
+    "tech_category": "Technology",
+    "features": [
+      "Trending Tech Gadgets",
+      "Useful Accessories",
+      "Product Reviews & Demos"
+    ],
+    "subscription_benefits": [
+      "Early Access to New Product Launches",
+      "Member-Only Discounts on Electronics",
+      "Tech Support Forum Access"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 410
+  },
+  {
+    "id": 5,
+    "name": "Artisan Craft Supplies",
+    "thumbnail": "https://i.ibb.co/yBn0n231/craft-image.jpg",
+    "banner": "https://i.ibb.co/yBn0n231/craft-image.jpg",
+    "frequency": "Monthly",
+    "price": 34.99,
+    "description": "Fuel your creativity with a curated box of high-quality art and craft supplies.",
+    "tech_category": "Hobbies",
+    "features": [
+      "Premium Art Materials",
+      "DIY Project Ideas",
+      "Exclusive Crafting Tutorials"
+    ],
+    "subscription_benefits": [
+      "Discounts on Future Supply Purchases",
+      "Access to Online Crafting Community",
+      "Showcase Your Creations"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 225
+  },
+  {
+    "id": 6,
+    "name": "Fitness Fanatic Box",
+    "thumbnail": "https://i.ibb.co/d0yLnjpj/fitness-eqp.jpg",
+    "banner": "https://i.ibb.co/d0yLnjpj/fitness-eqp.jpg",
+    "frequency": "Monthly",
+    "price": 59.99,
+    "description": "Get your monthly dose of fitness essentials, including workout gear, healthy snacks, and training guides.",
+    "tech_category": "Health & Fitness",
+    "features": [
+      "High-Quality Fitness Equipment",
+      "Nutritious Snack Samples",
+      "Workout Plans & Tips"
+    ],
+    "subscription_benefits": [
+      "Discounts on Fitness Programs",
+      "Access to Virtual Fitness Classes",
+      "Personalized Workout Advice"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 380
+  },
+  {
+    "id": 7,
+    "name": "Bookworm's Delight",
+    "thumbnail": "https://i.ibb.co/1Y3jdD8m/stack-books-black-wooden-table.jpg",
+    "banner": "https://i.ibb.co/1Y3jdD8m/stack-books-black-wooden-table.jpg",
+    "frequency": "Monthly",
+    "price": 19.99,
+    "description": "Receive a curated selection of new and noteworthy books based on your preferred genres.",
+    "tech_category": "Literature",
+    "features": [
+      "Handpicked Books",
+      "Exclusive Bookmarks",
+      "Author Interviews"
+    ],
+    "subscription_benefits": [
+      "Discounts on Future Book Purchases",
+      "Access to Online Book Club Discussions",
+      "Early Release Announcements"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 612
+  },
+  {
+    "id": 8,
+    "name": "Pet Pampering Pack",
+    "thumbnail": "https://i.ibb.co/QFr0J54V/pet-accessories-still-life-concept-set.jpg",
+    "banner": "https://i.ibb.co/QFr0J54V/pet-accessories-still-life-concept-set.jpg",
+    "frequency": "Monthly",
+    "price": 32.99,
+    "description": "Spoil your furry friend with a monthly box of toys, treats, and grooming essentials.",
+    "tech_category": "Pets",
+    "features": [
+      "Fun and Durable Toys",
+      "Healthy and Delicious Treats",
+      "Grooming Supplies"
+    ],
+    "subscription_benefits": [
+      "Discounts on Pet Supplies",
+      "Pet Health and Wellness Tips",
+      "Connect with Other Pet Lovers"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 295
+  },
+  {
+    "id": 9,
+    "name": "Beauty Bliss Box",
+    "thumbnail": "https://i.ibb.co/Y7vScD5r/makeup.jpg",
+    "banner": "https://i.ibb.co/Y7vScD5r/makeup.jpg",
+    "frequency": "Monthly",
+    "price": 39.99,
+    "description": "Discover new and exciting beauty products, from skincare to makeup.",
+    "tech_category": "Beauty",
+    "features": [
+      "Sample and Full-Size Products",
+      "Skincare and Makeup Items",
+      "Beauty Tips and Tutorials"
+    ],
+    "subscription_benefits": [
+      "Discounts on Featured Brands",
+      "Access to Exclusive Beauty Events",
+      "Personalized Beauty Recommendations"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 450
+  },
+  {
+    "id": 10,
+    "name": "Outdoor Adventure Kit",
+    "thumbnail": "https://i.ibb.co/M5NpjpmF/hiking.webp",
+    "banner": "https://i.ibb.co/M5NpjpmF/hiking.webp",
+    "frequency": "Quarterly",
+    "price": 79.99,
+    "description": "Gear up for your next adventure with essential outdoor equipment and supplies.",
+    "tech_category": "Outdoor & Sports",
+    "features": [
+      "Camping Gear",
+      "Hiking Essentials",
+      "Survival Tools"
+    ],
+    "subscription_benefits": [
+      "Discounts at Outdoor Retailers",
+      "Access to Adventure Guides and Maps",
+      "Join Outdoor Enthusiast Community"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 180
+  },
+  {
+    "id": 11,
+    "name": "Kids Learning Lab",
+    "thumbnail": "https://i.ibb.co/0RpMbQFy/kids-book.jpg",
+    "banner": "https://i.ibb.co/0RpMbQFy/kids-book.jpg",
+    "frequency": "Monthly",
+    "price": 24.99,
+    "description": "Engage young minds with fun and educational toys, books, and activities.",
+    "tech_category": "Kids & Education",
+    "features": [
+      "Age-Appropriate Learning Materials",
+      "Interactive Toys and Games",
+      "Creative Craft Projects"
+    ],
+    "subscription_benefits": [
+      "Discounts on Educational Resources",
+      "Parenting Tips and Advice",
+      "Access to Kids' Online Workshops"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 355
+  },
+  {
+    "id": 12,
+    "name": "Gentleman's Grooming Club",
+    "thumbnail": "https://i.ibb.co/9R2pXLV/gentleman.webp",
+    "banner": "https://i.ibb.co/9R2pXLV/gentleman.webp",
+    "frequency": "Monthly",
+    "price": 44.99,
+    "description": "Elevate your grooming routine with premium skincare, shaving, and hair care products.",
+    "tech_category": "Men's Grooming",
+    "features": [
+      "High-End Grooming Products",
+      "Shaving Essentials",
+      "Hair Styling Aids"
+    ],
+    "subscription_benefits": [
+      "Discounts on Full-Size Products",
+      "Grooming Tips and Advice",
+      "Access to Men's Lifestyle Content"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 210
+  }
+]

@@ -17,7 +17,7 @@ import slide6Img from "../../assets/5374800.jpg";
 
 const Slider = () => {
   return (
-    <div className="mt-8 mb-14">
+    <div className="mt-8 mb-24">
       <Swiper
         slidesPerView={1}
         centeredSlides={true}

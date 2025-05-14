@@ -11,6 +11,7 @@ import SubscriptionBoxes from "../Components/SubscriptionBoxes/SubscriptionBoxes
 import Loading from "../Components/Loading/Loading";
 import CardDetailsLayout from "../Layouts/CardDetailsLayout";
 import ErrorPage from "../Pages/ErrorPage";
+import WishListLayout from "../Layouts/WishListLayout";
 
 export const router = createBrowserRouter([
   {
@@ -65,4 +66,11 @@ export const router = createBrowserRouter([
       </PrivateRoute>
     ),
   },
+  {
+    path:"/wishList",
+    errorElement:<ErrorPage></ErrorPage>,
+    element:<PrivateRoute>
+      <WishListLayout></WishListLayout>
+    </PrivateRoute>
+  }
 ]);

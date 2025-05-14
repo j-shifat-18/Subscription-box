@@ -2,10 +2,13 @@ import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { loginUser, googleLogin } = use(AuthContext);
   const [error, setError] = useState("");
+  const [showPass, setShowPass] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -38,6 +41,9 @@ const Login = () => {
   };
   return (
     <div className="hero  min-h-screen">
+      <Helmet>
+        <title>Login | Subscription Box</title>
+      </Helmet>
       <div className="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body ">
           <h2 className="font-semibold text-3xl text-center mb-5">
@@ -53,13 +59,25 @@ const Login = () => {
               placeholder="Enter your email address"
             />
             <label className="label font-semibold text-xl">Password</label>
-            <input
-              name="password"
-              required
-              type="password"
-              className="input border-none bg-base-300 "
-              placeholder="Enter your password"
-            />
+            <div className="relative">
+              <input
+                name="password"
+                required
+                type={showPass ? "text" : "password"}
+                className="input border-none bg-base-300 "
+                placeholder="Enter your password"
+              />
+              <p
+                onClick={() => setShowPass(!showPass)}
+                className="btn btn-xs absolute top-2 right-6 bg-transparent border-none"
+              >
+                {showPass ? (
+                  <FaEyeSlash size={20}></FaEyeSlash>
+                ) : (
+                  <FaEye size={20}></FaEye>
+                )}
+              </p>
+            </div>
 
             {error && <p className="text-red-700 text-xs">{error}</p>}
 

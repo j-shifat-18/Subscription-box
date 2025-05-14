@@ -6,6 +6,7 @@ import Slider from "../Components/Slider/Slider";
 import { AuthContext } from "../Provider/AuthProvider";
 import Loading from "../Components/Loading/Loading";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const HomeLayout = () => {
 

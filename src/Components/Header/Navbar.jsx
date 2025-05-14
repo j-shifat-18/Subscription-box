@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import logo from '../../assets/subscription-box-logo.png'
 
 const Navbar = () => {
   const { user, logOutUser } = use(AuthContext);
@@ -13,6 +14,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/profile">My Profile</NavLink>
+      </li>
+      <li>
+        <NavLink to="/wishList">Wish List</NavLink>
       </li>
     </>
   );
@@ -52,7 +56,8 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-3xl font-bold ml-4">
+        <a className="text-3xl font-bold ml-4 flex items-center gap-1">
+          <img src={logo} alt="" />
           Subscription<span className=" text-red-600">Box</span>
         </a>
       </div>

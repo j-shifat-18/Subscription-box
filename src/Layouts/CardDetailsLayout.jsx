@@ -5,6 +5,10 @@ import Footer from "../Components/Footer/Footer";
 import ReviewSection from "../Components/CardDetails/ReviewSection";
 import { useLocation } from "react-router";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet";
+import { use } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+import Loading from "../Components/Loading/Loading";
 
 const CardDetailsLayout = () => {
   const location = useLocation();
@@ -14,8 +18,17 @@ const CardDetailsLayout = () => {
       toast.success("Logged in Successfully");
     }
   });
+
+  const {loading}=use(AuthContext);
+  if(loading){
+    return <Loading></Loading>
+  }
+
   return (
     <div>
+      <Helmet>
+        <title>Home | Subscription Box</title>
+      </Helmet>
       <header>
         <Navbar></Navbar>
       </header>

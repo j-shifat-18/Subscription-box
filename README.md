@@ -6,7 +6,7 @@ Welcome to the **Subscription Box** — a React-based single-page application th
 
 ## 🔗 Live URL
 
-👉 [Live Site](https://your-deployment-url.netlify.app)  
+👉 [Live Site](https://subscription-box-d05fc.web.app/)  
 
 ---
 

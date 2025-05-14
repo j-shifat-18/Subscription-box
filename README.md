@@ -1,12 +1,80 @@
-# React + Vite
+# 📦 Subscription Box Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Subscription Box** — a React-based single-page application that allows users to explore, subscribe to, and manage curated subscription boxes tailored to their interests.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live URL
 
-## Expanding the ESLint configuration
+👉 [Live Site](https://your-deployment-url.netlify.app)  
+*(Replace with your actual hosted link)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Project Purpose
+
+This project was built as part of an assignment to practice full-stack integration, user authentication, protected routes, dynamic routing, and a personalized user experience. It simulates a real-world subscription box platform with user interaction, reviews, and wishlist functionality.
+
+---
+
+## 🚀 Key Features
+
+- 🔐 **Authentication:**
+  - Login/Register with Email & Password
+  - Google OAuth
+  - Forgot Password functionality (email-based reset)
+
+- 🧭 **Routing & Navigation:**
+  - React Router v6.14 with `createBrowserRouter`
+  - Private Routes (e.g., Profile, Wishlist, Subscription Details)
+  - 404 Error Page
+
+- 🖼️ **Home Page Sections:**
+  - Dynamic Hero Slider (Swiper.js)
+  - Subscription Services (cards rendered from JSON)
+  - Extra informative sections (e.g., support local)
+
+- 📝 **Subscription Box Details Page:**
+  - Protected route
+  - Shows full details of a subscription box
+  - Add Review and Rating (1-5 stars)
+
+- 💖 **Wishlist:**
+  - Add/remove boxes to wishlist
+  - Dedicated Wishlist Page (protected route)
+  - Displays message when wishlist is empty
+
+- 👤 **My Profile Page:**
+  - View and update user name and photo using Firebase `updateProfile()`
+
+- 🎨 **Dynamic Page Titles:**
+  - Titles change per route using `react-helmet` or `react-helmet-async`
+
+- ⚙️ **Environment Variables:**
+  - Firebase configuration keys stored securely in `.env` file
+
+- 📱 **Responsive Design:**
+  - Fully responsive on mobile, tablet, and desktop
+
+---
+
+## 📦 Data Handling
+
+- Subscription data is loaded from a local `subscriptionData.json` file hosted in the `public/` folder
+- Images are hosted on [postimages.org](https://postimages.org)
+
+---
+
+## 🧩 NPM Packages Used
+
+| Package               | Purpose                                |
+|------------------------|----------------------------------------|
+| `react-router-dom`     | Routing and protected routes           |
+| `firebase`             | Authentication (email/password, Google) |
+| `react-toastify`       | Toast notifications (login, errors)    |
+| `swiper`               | Hero slider                            |
+| `react-helmet` / `react-helmet-async` | Dynamic document title updates     |
+| `tailwindcss` + `daisyui` | Styling and prebuilt UI components  |
+
+---
+

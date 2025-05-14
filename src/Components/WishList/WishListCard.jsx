@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const WishListCard = ({wish}) => {
 
     const {wishList , setWishList} = use(WishListContext);
-    console.log(wishList)
+    // console.log(wishList)
 
     const handleRemove = (id)=>{
         const filteredCards = wishList.filter(box=>box.id != id);

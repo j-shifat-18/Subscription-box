@@ -56,15 +56,15 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-3xl font-bold ml-4 flex items-center gap-1">
-          <img src={logo} alt="" />
+        <a className="text-xl md:text-2xl  lg:text-3xl font-bold ml-4 flex items-center gap-1">
+          <img className="w-6 md:w-8 lg:w-10" src={logo} alt="" />
           Subscription<span className=" text-red-600">Box</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end flex gap-4 items-center object-cover">
+      <div className="navbar-end flex flex-col md:flex-row md:items-center  gap-4 items-end object-cover">
         {user ? (
           <img
             className="w-[40px] h-[40px] rounded-full"

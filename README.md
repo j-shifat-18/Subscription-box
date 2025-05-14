@@ -7,7 +7,6 @@ Welcome to the **Subscription Box** — a React-based single-page application th
 ## 🔗 Live URL
 
 👉 [Live Site](https://your-deployment-url.netlify.app)  
-*(Replace with your actual hosted link)*
 
 ---
 
@@ -61,7 +60,7 @@ This project was built as part of an assignment to practice full-stack integrati
 ## 📦 Data Handling
 
 - Subscription data is loaded from a local `subscriptionData.json` file hosted in the `public/` folder
-- Images are hosted on [postimages.org](https://postimages.org)
+- Images are hosted on [postimages.org](https://imgbb.com/)
 
 ---
 

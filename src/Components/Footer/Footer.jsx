@@ -47,8 +47,8 @@ const Footer = () => {
         </nav>
       </div>
       <div className="flex justify-center items-center gap-8">
-        <h2 className="font-extrabold text-9xl">Let`s Talk</h2>
-        <p className="bg-primary p-7 rounded-full">
+        <h2 className="font-extrabold text-4xl md:text-6xl lg:text-9xl">Let`s Talk</h2>
+        <p className="bg-primary p-2 md:p-4 lg:p-7 rounded-full">
           <MdArrowOutward color="white" size={50}></MdArrowOutward>
         </p>
       </div>

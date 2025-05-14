@@ -28,7 +28,7 @@ const Slider = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination,Navigation, Autoplay]}
-        className="mySwiper h-[400px] w-[750px] rounded-2xl"
+        className="mySwiper mx-auto h-[250px] w-[350px] md:h-[400px] md:w-[750px] rounded-2xl"
       >
         {/* slide 1 */}
         <SwiperSlide>
@@ -38,12 +38,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide1Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   Discover New Surprises Monthly
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                   Curated just for you. Every month. Every time.
                 </p>
               </div>
@@ -59,12 +59,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide2Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   Tailored Boxes for Every Passion
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                   From tech to wellness.
                 </p>
               </div>
@@ -80,12 +80,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide3Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   Flexible Subscriptions, Endless Joy
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                   Cancel anytime
                 </p>
               </div>
@@ -101,12 +101,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide4Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   Support Local, Unbox Happiness
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                   Celebrate local creators with every box you receive.
                 </p>
               </div>
@@ -122,12 +122,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide5Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   A Box for Every Interest
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                   Tech, wellness, books, and more — choose what excites you.
                 </p>
               </div>
@@ -143,12 +143,12 @@ const Slider = () => {
               backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9), rgba(17, 17, 17, 0)), url(${slide6Img})`,
             }}
           >
-            <div className="absolute bottom-4  flex items-center justify-center text-center p-6">
-              <div className="text-white space-y-4" data-aos="fade-up">
-                <h2 className="text-5xl font-bold">
+            <div className="absolute bottom-4  flex items-center justify-center text-center p-2 md:p-4 lg:p-6">
+              <div className="text-white space-y-2 lg:space-y-4" data-aos="fade-up">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
                   Skip, Pause, or Cancel Anytime
                 </h2>
-                <p className="text-lg">
+                <p className="text-base lg:text-lg">
                  You’re in full control of your subscription journey.
                 </p>
               </div>

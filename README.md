@@ -60,7 +60,7 @@ This project was built as part of an assignment to practice full-stack integrati
 ## 📦 Data Handling
 
 - Subscription data is loaded from a local `subscriptionData.json` file hosted in the `public/` folder
-- Images are hosted on [postimages.org](https://imgbb.com/)
+- Images are hosted on [https://imgbb.com/](https://imgbb.com/)
 
 ---
 

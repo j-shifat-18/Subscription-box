@@ -12,7 +12,7 @@ const Banner = () => {
       <div className="absolute rounded-2xl inset-0 "></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full max-w-5xl mx-auto px-6 text-white">
+      <div data-aos="fade-right" className="relative z-10 flex flex-col justify-center h-full max-w-5xl mx-auto px-6 text-white">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 max-w-xl">
           Unbox Joy Every Month
         </h1>

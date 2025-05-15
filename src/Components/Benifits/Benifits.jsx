@@ -11,7 +11,7 @@ const Benifits = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="bg-white shadow-md rounded-xl p-6">
+          <div className="bg-white shadow-md rounded-xl p-6" data-aos="fade-right">
             <img
               src="https://i.ibb.co/0Vv07d9Y/tailor-to-you.jpg"
               alt="Personalized"
@@ -23,7 +23,7 @@ const Benifits = () => {
             </p>
           </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6">
+          <div className="bg-white shadow-md rounded-xl p-6" data-aos="fade-right">
             <img
               src="https://i.ibb.co/LzXpk600/support-local.jpg"
               alt="Support Local"
@@ -35,7 +35,7 @@ const Benifits = () => {
             </p>
           </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6">
+          <div className="bg-white shadow-md rounded-xl p-6" data-aos="fade-left">
             <img
               src="https://i.ibb.co/spcLzKst/cancel-subs.jpg"
               alt="Flexible"
@@ -47,7 +47,7 @@ const Benifits = () => {
             </p>
           </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6">
+          <div className="bg-white shadow-md rounded-xl p-6" data-aos="fade-left">
             <img
               src="https://i.ibb.co/mr31NBG8/delivery.jpg"
               alt="Fast Delivery"
